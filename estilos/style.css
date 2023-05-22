@@ -10,21 +10,48 @@
 
 :root {
     --cor1: #FFF;
-    --cor2: #F9FCAD;
-    --cor3: #BE8500;
-    --cor4: #FF9BAD;
-    --cor5: #360504;
-    --cor6: #1F271B;
-    --cor7: #000000;
+    --cor2: #FAEFD3;
+    --cor3: #F9FCAD;
+    --cor4: #BE8500;
+    --cor5: #FF9BAD;
+    --cor6: #360504;
+    --cor7: #1F271B;
+    --cor8: #000000;
 }
 
-header {
-    height: 50px;
-    width: 100vw;
+div.logo-nav {
+    width: 60px;
+    height: 60px;
+}
+
+/* a#logo-nav-img {
+    width: 70px;
+    height: 70px;
+    /* padding: 0;
+    margin-left: 10px;
+}
+
+img#logo {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+} */
+
+div.navegar {
+    width: 90vw;
+    margin: 0 5px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+nav {
+    background-color: var(--cor2);
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
 }
 
 nav a {
