@@ -5,16 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S.O.S Store</title>
     <link rel="shortcut icon" href="./favicon/favicon1.ico" type="image/x-icon">
     <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>S.O.S Store</title>
 </head>
 
 <body>
     <header>
         <nav>
             <div class="logo-nav">
-                <img src="./imagens/logo-sf.png" alt="Logo" id="logo">
+                <a href="https://esteroli.github.io/loja-sara/" id="link-store">
+                    <img src="./imagens/logo-sf.png" alt="Logo" id="logo">
+                </a>
             </div>
             <div class="pag-nav">
                 <ul>
@@ -24,6 +27,18 @@
                     <li class="pag-store"><a href="ilustracao.html" target="_self" rel="next" class="item-nav">Ilustrações</a></li>
                 </ul>
             </div>
+            <div class="icon-nav">
+                <div class="pesquisa-container">
+                    <span class="material-symbols-outlined pesquisa-icon">search</span>
+                    <input type="text" id="pesquisa-input" class="pesquisa-input" placeholder="Digite sua pesquisa">
+                    <button type="button" id="pesquisa-botao">Pesquisar</button>
+                </div> 
+                <div id="resultados-container">
+
+                </div>  
+                <!-- <span class="material-symbols-outlined">person</span>
+                <span class="material-symbols-outlined">shopping_cart</span> -->
+            </div>
         </nav>
     </header>
     <main>
@@ -32,6 +47,7 @@
     <footer>
 
     </footer>
+    <script src="./script/script.js"></script>
 </body>
 
 </html>

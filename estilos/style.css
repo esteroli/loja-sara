@@ -48,7 +48,7 @@ li.pag-store {
 }
 
 a.item-nav {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-family: 'Fira Sans', sans-serif;
     margin: 10px;
     padding: 5px;
@@ -64,4 +64,34 @@ a.item-nav:hover,
     text-decoration: underline;
     border-radius: 7px;
     transition: 0.4s;
+}
+
+div.pesquisa-container {
+    display: flex;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+span.pesquisa-icon{
+    color: var(--cor4);
+    padding-bottom: 5px;
+    font-size: 35px;
+    height: 25px;
+
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+input.pesquisa-input {
+    padding-left: 45px;
+    height: 32px;
+    display: none;
+}
+
+button#pesquisa-botao {
+    padding: 5px 10px;
+    display: none;
 }
