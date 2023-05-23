@@ -88,10 +88,33 @@ span.pesquisa-icon{
 input.pesquisa-input {
     padding-left: 45px;
     height: 32px;
-    display: none;
+    border: none; 
+    border-radius: 15px 0 0 15px;
+    transition: 0.3s;
+}
+
+input.pesquisa-input::placeholder{
+    color: #be8500b8;
+    font-style: italic;
 }
 
 button#pesquisa-botao {
     padding: 5px 10px;
+    border: 1px solid #be850090; 
+    border-radius: 0 15px 15px 0;
+}
+
+input.pesquisa-input,
+button#pesquisa-botao {
     display: none;
+    background-color: var(--cor7);
+    color: var(--cor4);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.459);
+    transition: opacity 0.5 ease-in-out;
+    cursor: pointer;
+}
+
+input.pesquisa-input.hidden,
+button#pesquisa-botao.hidden {
+    opacity: 0;
 }
