@@ -42,3 +42,39 @@ pesquisaBotao.addEventListener("click", function(evento) {
     evento.stopPropagation(); //Evita que o clique se propague para o documento
     //Aqui pode adicionar a lógica para processar a pesquisa
 });
+
+
+//-----------------Carrosel da área de slides---------------------
+const carrossel = document.querySelector('.carrossel');
+const slides = carrossel.querySelector('.slides');
+const prevBotao = carrossel.querySelector('.prev-btn');
+const nextBotao = carrossel.querySelector('.next-btn');
+
+let currentIndex = 0;
+const slideWidth = carrossel.clientWidth
+
+function goToSlide(index) {
+    slides.style.transform = `translateX(-${index * slideWidth}px)`;
+    currentIndex = index;
+}
+
+function nextSlide() {
+    if (currentIndex < slides.childElementCount - 1) {
+        goToSlide(currentIndex + 1);
+    } else {
+        goToSlide(0);
+    }
+}
+
+function prevSlide() {
+    if (currentIndex > 0) {
+        goToSlide(currentIndex - 1);
+    } else {
+        goToSlide(slides.childElementCount - 1)
+    }
+}
+
+nextBotao.addEventListener('click', nextSlide);
+prevBotao.addEventListener('click', prevSlide);
+
+setInterval(nextSlide, 3000)
