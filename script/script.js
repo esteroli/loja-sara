@@ -14,6 +14,7 @@ pesquisaIcon.addEventListener("click", function(evento) {
     //Exibir barra de pesquisa
     pesquisaInput.style.display = "block";
     pesquisaBotao.style.display = "inline-block"
+    pesquisaIcon.classList.add('search')
 
     evento.stopPropagation(); //Evita que o clique se propague para o documento
 });
@@ -27,6 +28,8 @@ document.addEventListener("click", function() {
     //ocultar barra de pesquisa
     pesquisaInput.style.display = "none"
     pesquisaBotao.style.display = "none"
+    pesquisaIcon.classList.remove('search')
+
 });
 
 //Evitando que o clique na área de pesquisa feche a aba

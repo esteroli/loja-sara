@@ -75,36 +75,35 @@ a.item-nav:hover,
 
 div.icon-nav {
     display: flex;
-}
-
-div.pesquisa-container {
-    display: flex;
-    margin-bottom: 10px;
-    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    padding: 10px;
 }
 
 span.material-symbols-outlined{
     color: var(--cor4);
     padding-bottom: 5px;
     font-size: 35px;
-    height: 100%;
 }
-
-span.pesquisa-icon{
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
+.material-symbols-outlined:hover{
     cursor: pointer;
-    padding-top: 3px;
 }
-
+.search-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
 input.pesquisa-input {
     padding-left: 45px;
     height: 32px;
     border: none; 
     border-radius: 15px 0 0 15px;
     transition: 0.3s;
+}
+
+.pesquisa-icon.search {
+    position: absolute;
 }
 
 input.pesquisa-input::placeholder{
@@ -131,15 +130,5 @@ button#pesquisa-botao {
 
 input.pesquisa-input.hidden,
 button#pesquisa-botao.hidden {
-    opacity: 0;
-}
-
-div.login-container {
-    position: relative;
-    padding-left: 80px;
-}
-
-div.carrinho-container {
-    position: relative;
-    padding-left: 30px;
+    display: none;
 }
