@@ -47,7 +47,7 @@ img#logo {
 
 main {
     width: 70%;
-    height: 80vh;
+    height: 60vh;
     padding: 30px 5px;
     margin: auto;
     display: flex;
@@ -96,4 +96,37 @@ div.campo {
 
 div.campo > label {
     display: none;
+}
+
+input[type="submit"] {
+    background-color: var(--cor4);
+    color: var(--cor6);
+    font-weight: bold;
+    padding: 3px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.593);
+    width: 80px;
+    margin-top: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--cor6);
+    color: #BE8500;
+    transition: 0.3s;
+}
+
+#esqueci {
+    color: var(--cor7);
+}
+
+.ent-cad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: small;
+}
+
+p > a {
+    font-style: italic;
 }
